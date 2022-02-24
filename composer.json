@@ -1,18 +1,18 @@
 {
-    "name": "iexbase/web3.php",
-    "description": "Ethereum web3 interface.",
+    "name": "iexbase/web3-php8",
+    "description": "Ethereum web3 interface. Package that supports php 8",
     "type": "library",
     "license": "MIT",
     
     "require": {
-        "php": "^7.1",
+        "php": "^7.1|^8.0",
          "ext-mbstring": "*",
         "guzzlehttp/guzzle": "^7.0",
         "kornrunner/keccak": "~1.0",
         "phpseclib/phpseclib": "~2.0.11"
     },
     "require-dev": {
-        "phpunit/phpunit": "~6.0"
+        "phpunit/phpunit": "^9.5.16"
     },
     "autoload": {
         "psr-4": {
