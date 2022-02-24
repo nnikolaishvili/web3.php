@@ -11,9 +11,6 @@
         "kornrunner/keccak": "~1.0",
         "phpseclib/phpseclib": "^3.0"
     },
-    "replace": {
-        "iexbase/web3.php": "*"
-    },
     "require-dev": {
         "phpunit/phpunit": "^9.5.16"
     },
