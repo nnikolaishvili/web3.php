@@ -1,5 +1,5 @@
 {
-    "name": "iexbase/web3-php8",
+    "name": "nnikolaishvili/web3.php",
     "description": "Ethereum web3 interface. Package that supports php 8",
     "type": "library",
     "license": "MIT",
