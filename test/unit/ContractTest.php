@@ -412,7 +412,7 @@ class ContractTest extends TestCase
      *
      * @return void
      */
-    public function setUp()
+    public function setUp(): void
     {
         parent::setUp();
 
@@ -708,7 +708,7 @@ class ContractTest extends TestCase
         ], function ($err, $result) use ($contract) {
             if ($err !== null) {
                 // infura api gg
-                return $this->assertTrue($err !== null);
+                $this->assertTrue($err !== null);
             }
             if (isset($result)) {
                 echo "\nEstimate gas: " . $result->toString() . "\n";

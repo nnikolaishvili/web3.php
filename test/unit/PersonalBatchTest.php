@@ -19,7 +19,7 @@ class PersonalBatchTest extends TestCase
      * 
      * @return void
      */
-    public function setUp()
+    public function setUp(): void
     {
         parent::setUp();
 
@@ -41,7 +41,7 @@ class PersonalBatchTest extends TestCase
 
         $personal->provider->execute(function ($err, $data) {
             if ($err !== null) {
-                return $this->assertTrue($err !== null);
+                $this->assertTrue($err !== null);
             }
             $this->assertTrue(is_array($data[0]));
             $this->assertTrue(is_string($data[1]));

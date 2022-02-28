@@ -27,7 +27,7 @@ class PersonalApiTest extends TestCase
      * 
      * @return void
      */
-    public function setUp()
+    public function setUp(): void
     {
         parent::setUp();
 
@@ -46,7 +46,7 @@ class PersonalApiTest extends TestCase
         $personal->listAccounts(function ($err, $accounts) {
             if ($err !== null) {
                 // infura banned us to use list accounts
-                return $this->assertTrue($err->getCode() === 405);
+                $this->assertTrue($err->getCode() === 405);
             }
             $this->assertTrue(is_array($accounts));
         });
