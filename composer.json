@@ -1,6 +1,6 @@
 {
     "name": "nnikolaishvili/web3.php",
-    "description": "Ethereum web3 interface. Package that supports php 8",
+    "description": "Ethereum web3 interface. Supports php 8",
     "type": "library",
     "license": "MIT",
     
